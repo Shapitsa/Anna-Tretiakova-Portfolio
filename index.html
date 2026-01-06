@@ -10,7 +10,11 @@
       font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
-      background: #f4f6f8;
+      background: #579af2;
+      background-image: 
+        linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+        background-size: 40px 40px;
       color: #333;
     }
 
@@ -73,39 +77,6 @@
       text-align: center;
     }
 
-/* Ribbon styles */
-.ribbon {
-  position: fixed; /* stays on screen */
-  top: 20px;       /* distance from top */
-  left: -100%;     /* start off-screen left */
-  background: #ff69b4; /* pink ribbon */
-  color: white;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  white-space: nowrap; /* prevents wrapping */
-  font-size: 1.2rem;
-  z-index: 1000;
-  
-  /* animation */
-  animation: flyRibbon 8s linear infinite;
-}
-
-/* Keyframes for flying across the screen */
-@keyframes flyRibbon {
-  0% {
-    left: -100%;
-  }
-  50% {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  100% {
-    left: 100%;
-  }
-}
-
   </style>
 </head>
 <body>
@@ -115,7 +86,6 @@
     <p>I’m a Mechanical Engineering student at Boston University. I love to build, craft, teach, and learn.</p>
   </header>
 
-<div class="ribbon">🎀 Hello! Welcome to my portfolio 🎀</div>
 
   <main class="projects-grid">
     <a href="#" class="project-card">
