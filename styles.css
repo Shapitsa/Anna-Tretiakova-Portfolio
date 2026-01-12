@@ -60,4 +60,45 @@ h1, h2, h3 {
 }
 
 .card-inner {
-  po
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.card-front {
+  position: absolute;
+  inset: 0;
+  background: #61a7e9;
+  border-radius: 12px;
+  padding: 1.2rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.card-front h2 {
+  margin-bottom: 0.5rem;
+}
+
+.card-front p {
+  font-size: 0.95rem;
+}
+
+.highlight {
+  background-color: rgba(235, 121, 199, 0.6);
+  padding: 0 4px;
+  border-radius: 3px;
+  color: #000;
+}
+
+/* Hover Effect */
+.project-card:hover .card-inner {
+  transform: translateY(-6px);
+}
