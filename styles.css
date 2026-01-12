@@ -14,23 +14,31 @@ body {
   color: #000000;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 3rem 1rem 1rem;
+/* Fonts and Writing  */
+/* Body text */
+body {
+  font-family: 'Helvetica', 'Arial', sans-serif; 
+  font-size: 16px;
+  line-height: 1.6;
+  color: #111;
 }
 
-header h1 {
+/* Headings (h1-h6) */
+h1, h2, h3 {
+  font-family: 'Helvetica', 'Arial', sans-serif; 
+  color: #111;
+  margin-top: 0;
   margin-bottom: 0.5rem;
-  font-size: 2rem;
-  color: #000;
 }
 
-header p {
-  font-size: 1.1rem;
-  max-width: 600px;
-  margin: auto;
-  color: #000;
+/* Huge title (<h2 class="huge-title">test big h2</h2>) */
+.huge-title {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+  text-align: center;
+  margin: 1rem 0;
 }
 
 /* Profile photo */
