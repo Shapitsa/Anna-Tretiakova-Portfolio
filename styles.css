@@ -19,6 +19,7 @@ h1, h2, h3 {
   color: #111;
   margin-top: 0;
   margin-bottom: 0.5rem;
+  text-align: center;
 }
 
 /* Huge Title */
