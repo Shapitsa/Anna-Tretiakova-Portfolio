@@ -3,12 +3,15 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #194d92;
+
+  /* White background with subtle grid */
+  background: #ffffff;
   background-image:
-    linear-gradient(to right, rgba(255,255,255,0.2) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(255,255,255,0.2) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0,0,0,0.05) 1px, transparent 1px);
   background-size: 20px 20px;
-  color: #EEE9C8;
+
+  color: #000000;
 }
 
 /* Header */
@@ -20,12 +23,14 @@ header {
 header h1 {
   margin-bottom: 0.5rem;
   font-size: 2rem;
+  color: #000;
 }
 
 header p {
   font-size: 1.1rem;
   max-width: 600px;
   margin: auto;
+  color: #000;
 }
 
 /* Grid */
@@ -42,6 +47,7 @@ header p {
 .project-card {
   perspective: 1200px;
   cursor: pointer;
+  text-decoration: none;
 }
 
 /* Rotating wrapper */
@@ -53,16 +59,18 @@ header p {
   transition: transform 0.8s ease;
 }
 
-
 /* Front & Back */
 .card-front,
 .card-back {
   position: absolute;
   inset: 0;
-  background: rgb(21, 27, 39);
+
+  /* Light blue cards */
+  background: #cfe8ff;
+
   border-radius: 12px;
-  padding: 1rem;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1.2rem;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
   backface-visibility: hidden;
 
   display: flex;
@@ -70,12 +78,19 @@ header p {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  color: #000;
 }
 
 /* Front */
+.card-front h2 {
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+
 .card-front p {
-  color: #EEE9C8;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
+  color: #000;
 }
 
 /* Back */
@@ -86,6 +101,45 @@ header p {
 
 .card-back p,
 .card-back li {
-  font-size: 0.85rem;
-  color: #EEE9C8;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Highlight text */
+.highlight {
+  background-color: rgba(255, 255, 0, 0.6);
+  padding: 0 4px;
+  border-radius: 3px;
+  color: #000;
+}
+
+/* Hover effect */
+.project-card:hover .card-inner {
+  transform: translateY(-6px);
+}
+
+/* Project pages (beltup.html, vision.html, etc.) */
+.project-page {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+
+  background: #cfe8ff;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+
+  color: #000;
+}
+
+/* Back link */
+.back-link {
+  display: inline-block;
+  margin-top: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+.back-link:hover {
+  text-decoration: underline;
 }
