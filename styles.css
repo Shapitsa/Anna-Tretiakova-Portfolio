@@ -161,33 +161,4 @@ h1, h2, h3 {
   text-decoration: underline;
 }
 
-/* Slogan container */
-.slogan {
-  margin-top: 1rem;
-  font-size: 1.4rem;
-  font-weight: bold;
-  overflow: hidden;
-}
 
-/* Each word */
-.word {
-  display: inline-block;
-  opacity: 0;
-  transform: translateX(-400px);
-  animation: slideIn 0.8s ease forwards;
-  margin-right: 0.5rem;
-}
-
-/* Staggered timing */
-.word1 { animation-delay: 0.2s; }
-.word2 { animation-delay: 0.8s; }
-.word3 { animation-delay: 1.4s; }
-.word4 { animation-delay: 2s; }
-
-/* Animation */
-@keyframes slideIn {
-  to {
-    opacity: 1;
-    transform: translateX(500);
-  }
-}
