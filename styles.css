@@ -33,6 +33,15 @@ header p {
   color: #000;
 }
 
+/* Profile photo */
+.profile-photo {
+  width: 120px;             /* adjust size */
+  height: 120px;            /* keep square */
+  object-fit: cover;        /* crop if image is not square */
+  border-radius: 50%;       /* make it circular */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
 /* Grid */
 .projects-grid {
   display: grid;
