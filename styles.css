@@ -152,6 +152,7 @@ header p {
 .back-link:hover {
   text-decoration: underline;
 }
+
 /* Slogan container */
 .slogan {
   margin-top: 1rem;
@@ -179,6 +180,6 @@ header p {
 @keyframes slideIn {
   to {
     opacity: 1;
-    transform: translateX(0);
+    transform: translateX(500);
   }
 }
