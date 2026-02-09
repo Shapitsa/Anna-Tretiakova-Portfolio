@@ -85,6 +85,15 @@ h1, h2, h3 {
   color: #000;
 }
 
+.project-card .card-front {
+  position: absolute;
+  background-image: var(--bg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
 .card-front h2 {
   margin-bottom: 0.5rem;
 }
@@ -94,7 +103,7 @@ h1, h2, h3 {
 }
 
 .highlight {
-  background-color: rgba(112, 174, 237, 0.6);
+  background-color: rgba(112, 174, 237, 1);
   padding: 0 4px;
   border-radius: 3px;
   color: #000;
