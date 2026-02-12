@@ -5,7 +5,7 @@ body {
   text-align: center;
   line-height: 1.6;
   margin: 0;
-  padding: 0;
+  padding: 0 1.5rem;
   color: #111;
   background: #fff;
   background-image:
@@ -35,13 +35,17 @@ h1, h2, h3 {
 
 /* Profile Photo */
 .profile-photo {
-  width: 120px;
-  height: 120px;
+  width: 520px;
+  height: 520px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 100%;
   display: block;
   margin: 1rem auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 /* Projects Grid */
