@@ -1,14 +1,16 @@
 /* Global Styles */
 body {
   font-family: 'Helvetica', Arial, sans-serif;
-  font-size: 16px;
+  font-size: clamp(14px, 1.2vw, 16px); /* responsive text */
   text-align: center;
   line-height: 1.6;
-  margin: 100px;
-  padding: 100px;
+
+  margin: clamp(10px, 5vw, 100px);
+  padding: clamp(10px, 5vw, 100px);
+
   color: #111;
-  background: url('gears.jpg') repeat;   /* tiled background */
-  background-size: 800px;  
+  background: url('gears.jpg') repeat;
+  background-size: clamp(300px, 50vw, 800px);
 }
 
 /* Headings */
@@ -32,10 +34,10 @@ h1, h2, h3 {
 
 /* Profile Photo */
 .profile-photo {
-  width: 520px;
-  height: 520px;
+  width: clamp(180px, 50vw, 520px);
+  aspect-ratio: 1 / 1;   /* keeps it perfectly square */
   object-fit: cover;
-  border-radius: 100%;
+  border-radius: 50%;
   display: block;
   margin: 1rem auto;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -148,7 +150,7 @@ html {
 .retro-border {
   position: relative;                   /* so ::before positions relative to this */
   background-color: rgba(255, 255, 153, 0.7); /* yellow overlay */
-  padding: 2rem;                        /* space inside the rectangle */
+  padding: clamp(1rem, 3vw, 2rem); /* responsive padding */                       
   border-radius: 12px;                  /* optional rounded corners */
   z-index: 1;                            /* above background, behind content */
 }
