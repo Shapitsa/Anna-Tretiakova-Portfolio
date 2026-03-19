@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-
+<div class="retro-border">
   <header style="text-align: center; padding: 2rem 1rem;">
     <h1>BeltUp</h1>
     <p>Mechanical Engineering project focusing on efficient belt storage and fully automated manufacturing workflow in Boston University’s ADML.</p>
-    <a href="../../index.html#beltup" style="display: inline-block; margin-top: 1rem;">← Back to Project</a>
-    
+
+    <button onclick="location.href='../../index.html#beltup'" 
+        style="display: inline-block; margin-top: 1rem; padding: 10px 20px; border-radius: 8px; background-color: #70aef0; color: white; border: none; cursor: pointer;">
+       ← Back to Projects
+    </button>    
 
   <main>
 
@@ -21,7 +24,13 @@
       <h2>Project Overview</h2>
       <p>My team and I developed a product designed for efficient belt storage and a fully automated manufacturing workflow in Boston University’s Automated Design and Manufacturing Lab (ADML). The system integrates automated tray conveyance, raw stock loading, CNC milling, and final part assembly. Below is a time-lapse capturing the complete process.</p>
       <img src="beltUp.jpg" alt="Team Photo" style="width:50%; border-radius: 12px; margin-top: 1rem; margin-bottom: 1rem;">
-      <h1>Watch the time-lapse video: <a href="https://youtu.be/pieryHqmlvw" target="_blank">BeltUp Full Process</a></h1>
+      <ul>
+      <button 
+        onclick="window.open('https://youtu.be/pieryHqmlvw', '_blank')" 
+        style="padding: 10px 20px; border-radius: 8px; background-color: rgba(255, 100, 0, 0.7); color: white; border: none; cursor: pointer; margin-top: 1rem;">
+        Watch the time-lapse video: BeltUp Full Process
+      </button>
+    </ul>
     </section>
 
     <!-- My Contributions -->
@@ -51,17 +60,37 @@
     </section>
 
     <!-- References -->
-    <section>
-      <h2>More Details</h2>
-      <ul>
-        <li><a href="ME345 Project Final Report.pdf" target="_blank">Project Report (PDF)</a></li>
-        <li><a href="BeltUp! Final Presentation.pdf" target="_blank">Project Slide Show (PDF)</a></li>
-      </ul>
-    </section>
+<section>
+  <h2>More Details</h2>
+<ul>
+      <button 
+        onclick="window.open('ME345 Project Final Report.pdf', '_blank')" 
+        style="padding: 10px 20px; border-radius: 8px; background-color: rgba(255, 100, 0, 0.7); color: white; border: none; cursor: pointer;">
+        Project Report (PDF)
+      </button>
+</ul>
+<ul>
+      <button 
+        onclick="window.open('BeltUp! Final Presentation.pdf', '_blank')" 
+        style="padding: 10px 20px; border-radius: 8px; background-color: rgba(255, 100, 0, 0.7); color: white; border: none; cursor: pointer;">
+        Project Slide Show (PDF)
+      </button>
+</ul>
+</section>
 
-    <a href="../../index.html#beltup" style="display: inline-block; margin-top: 1rem;">← Back to Project</a>
-    
+    <button onclick="location.href='../../index.html#beltup'" 
+        style="display: inline-block; margin-top: 1rem; padding: 10px 20px; border-radius: 8px; background-color: #70aef0; color: white; border: none; cursor: pointer;">
+       ← Back to Projects
+    </button>    
+
+    <!-- Bottom left button -->
+    <a href="../../index.html" class="corner-button left">← Back to Home</a>
+
+    <!-- Bottom right button -->
+    <a href="../Vision/vision.html" class="corner-button right">Next Project →</a>
+
+
   </main>
-
+</div>
 </body>
 </html>

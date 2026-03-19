@@ -7,12 +7,15 @@
   <link rel="stylesheet" href="../../styles.css">
 </head>
 <body>
-
+<div class="retro-border">
   <header style="text-align: center; padding: 2rem 1rem;">
     <h1>Aircraft Design</h1>
     <p>This project designed a new midsize airliner in Excel Workbook. </p>
-    <a href="../../index.html#plane" style="display: inline-block; margin-top: 1rem;">← Back to Projects</a>
 
+           <button onclick="location.href='../../index.html#plane'" 
+        style="display: inline-block; margin-top: 1rem; padding: 10px 20px; border-radius: 8px; background-color: #70aef0; color: white; border: none; cursor: pointer;">
+       ← Back to Projects
+    </button>
 
   <main>
 
@@ -32,17 +35,32 @@
   </section>
   
     <!-- References -->
-    <section>
-      <h2>More Details</h2>
-      <ul>
-        <li><a href="Presentation #4 - Preliminary Design Review 3 (PDR3).pdf" target="_blank">Design Review Presentation</a></li>
-      </ul>
-    </section>
+<section>
+<section>
+  <h2>More Details</h2>
+  <ul>
+    <button
+      onclick="window.open('Presentation.pdf', '_blank')" 
+      style="padding: 10px 20px; border-radius: 8px; background-color: rgba(255, 100, 0, 0.7); color: white; border: none; cursor: pointer;">
+      Design Review Presentation
+    </button>
+  </ul>
+</section>
+</section>
 
 
-    <a href="../../index.html#plane" style="display: inline-block; margin-top: 1rem;">← Back to Project</a>
+           <button onclick="location.href='../../index.html#plane'" 
+        style="display: inline-block; margin-top: 1rem; padding: 10px 20px; border-radius: 8px; background-color: #70aef0; color: white; border: none; cursor: pointer;">
+       ← Back to Projects
+    </button>
+
+   <!-- Bottom left button -->
+    <a href="../Vision/vision.html" class="corner-button left">← Previous Project</a>
+
+    <!-- Bottom right button -->
+    <a href="../bikeSensors/bikeSensor.html" class="corner-button right">Next Project →</a>
 
   </main>
-
+</div>
 </body>
 </html>
