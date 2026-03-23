@@ -169,3 +169,30 @@ button {
 button:hover {
   background-color: #5a8acb;   /* darker on hover */
 }
+
+/* Grid container */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* min 150px, max 1 fraction of container */
+  gap: 1rem; 
+  padding: 1rem;
+}
+
+/* All images */
+.image-grid img {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .side-by-side {
+    flex-direction: column; /* stack on phone */
+    text-align: center;
+  }
+
+  .side-by-side img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
